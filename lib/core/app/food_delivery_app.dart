@@ -6,8 +6,10 @@ class FoodDeliveryApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: SplashView(),
+    return MaterialApp(
+      theme: ThemeData(scaffoldBackgroundColor: const Color(0xfffcfefc)),
+      debugShowCheckedModeBanner: false,
+      home: const SplashView(),
     );
   }
 }
