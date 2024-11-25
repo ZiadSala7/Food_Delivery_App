@@ -17,4 +17,9 @@ class AppTextStyles {
     fontWeight: FontWeight.w400,
     fontFamily: parkinFamily,
   );
+  static const text20Med = TextStyle(
+    fontSize: 20,
+    fontWeight: FontWeight.w500,
+    fontFamily: parkinFamily,
+  );
 }
