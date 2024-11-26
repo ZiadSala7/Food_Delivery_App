@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:food_delivery_app/core/common/widgets/custom_button.dart';
-import 'package:food_delivery_app/core/common/widgets/custom_password_text_field.dart';
-import 'package:food_delivery_app/core/common/widgets/custom_text_form_field.dart';
 import 'package:food_delivery_app/core/utils/app_assets.dart';
 import 'package:food_delivery_app/core/utils/app_routes.dart';
 import 'package:food_delivery_app/core/utils/app_text_styles.dart';
 import 'package:food_delivery_app/features/auth/login/presentation/views/widgets/custom_auth_text_button.dart';
+import 'package:food_delivery_app/features/auth/register/presentation/views/widgets/custom_register_text_form_fields.dart';
 
 class RegisterViewBody extends StatelessWidget {
   const RegisterViewBody({super.key});
@@ -22,29 +21,7 @@ class RegisterViewBody extends StatelessWidget {
           style: AppTextStyles.text25Bold,
         ),
         const SizedBox(height: 50),
-        CustomTextFormField(
-          prefixIcon: Image.asset(
-            Assets.iconsProfileIcon,
-          ),
-          title: "Name",
-          controller: TextEditingController(),
-        ),
-        const SizedBox(height: 15),
-        CustomTextFormField(
-          title: "Email",
-          prefixIcon: Image.asset(
-            Assets.iconsEmailIcontf,
-          ),
-          controller: TextEditingController(),
-        ),
-        const SizedBox(height: 15),
-        CustomPasswordTextFormField(
-          title: "Password",
-          prefixIcon: Image.asset(
-            Assets.iconsPassIcon,
-          ),
-          controller: TextEditingController(),
-        ),
+        const CustomRegisterTextFormFields(),
         const SizedBox(height: 100),
         CustomButton(onPressed: () {}, txt: "Create Account"),
         const SizedBox(height: 30),
