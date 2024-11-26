@@ -7,6 +7,11 @@ class AppTextStyles {
     fontWeight: FontWeight.w700,
     fontFamily: parkinFamily,
   );
+  static const TextStyle text25Bold = TextStyle(
+    fontSize: 25,
+    fontWeight: FontWeight.w700,
+    fontFamily: parkinFamily,
+  );
   static const TextStyle text35Bold = TextStyle(
     fontSize: 35,
     fontWeight: FontWeight.w700,
@@ -17,8 +22,18 @@ class AppTextStyles {
     fontWeight: FontWeight.w400,
     fontFamily: parkinFamily,
   );
+  static const text16Bold = TextStyle(
+    fontSize: 16,
+    fontWeight: FontWeight.w700,
+    fontFamily: parkinFamily,
+  );
   static const text20Med = TextStyle(
     fontSize: 20,
+    fontWeight: FontWeight.w500,
+    fontFamily: parkinFamily,
+  );
+  static const text18Med = TextStyle(
+    fontSize: 18,
     fontWeight: FontWeight.w500,
     fontFamily: parkinFamily,
   );

@@ -38,9 +38,17 @@ class Assets {
   /// assets/icons/emailIcontf.png
   static const String iconsEmailIcontf = "assets/icons/emailIcontf.png";
 
+  /// Assets for iconsFacebookIcon
+  /// assets/icons/facebookIcon.png
+  static const String iconsFacebookIcon = "assets/icons/facebookIcon.png";
+
   /// Assets for iconsGalleryIcon
   /// assets/icons/galleryIcon.png
   static const String iconsGalleryIcon = "assets/icons/galleryIcon.png";
+
+  /// Assets for iconsGoogleIcon
+  /// assets/icons/googleIcon.png
+  static const String iconsGoogleIcon = "assets/icons/googleIcon.png";
 
   /// Assets for iconsPassIcon
   /// assets/icons/passIcon.png
