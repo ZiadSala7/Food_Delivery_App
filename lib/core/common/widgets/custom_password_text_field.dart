@@ -27,7 +27,7 @@ class _CustomPasswordTextFormFieldState
       controller: widget.controller,
       obscureText: isClicked,
       decoration: InputDecoration(
-        prefix:
+        prefixIcon:
             widget.prefixIcon == const SizedBox() ? null : widget.prefixIcon,
         suffixIcon: IconButton(
           onPressed: () {

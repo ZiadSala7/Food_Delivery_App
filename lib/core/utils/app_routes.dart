@@ -3,4 +3,6 @@ class AppRoutes {
   static const String firstOnboardingView = "firstOnboardingView";
   static const String secondOnboardingView = "secondOnboardingView";
   static const String loginView = "loginView";
+  static const String registerView = "registerView";
+  static const String forgetPassView = "forgetPassView";
 }

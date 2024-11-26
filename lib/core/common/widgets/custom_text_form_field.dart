@@ -20,7 +20,7 @@ class CustomTextFormField extends StatelessWidget {
     return TextFormField(
       controller: controller,
       decoration: InputDecoration(
-        prefix: prefixIcon == const SizedBox() ? null : prefixIcon,
+        prefixIcon: prefixIcon == const SizedBox() ? null : prefixIcon,
         suffixIcon: suffixIcon == const SizedBox() ? null : suffixIcon,
         hintText: title,
         filled: true,

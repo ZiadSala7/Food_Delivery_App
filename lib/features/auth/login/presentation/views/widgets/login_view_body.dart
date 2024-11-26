@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:food_delivery_app/core/common/widgets/custom_button.dart';
 import 'package:food_delivery_app/core/utils/app_assets.dart';
+import 'package:food_delivery_app/core/utils/app_routes.dart';
 import 'package:food_delivery_app/core/utils/app_text_styles.dart';
 import 'package:food_delivery_app/features/auth/login/presentation/views/widgets/custom_auth_text_button.dart';
 import 'package:food_delivery_app/features/auth/login/presentation/views/widgets/custom_continue_with_section.dart';
@@ -29,10 +30,19 @@ class LoginViewBody extends StatelessWidget {
         const SizedBox(height: 30),
         CustomAuthTextButton(
           txt: "Forget Your Password?",
-          onTap: () {},
+          onTap: () {
+            Navigator.pushReplacementNamed(context, AppRoutes.forgetPassView);
+          },
         ),
         const SizedBox(height: 40),
         CustomButton(onPressed: () {}, txt: "Login"),
+        const SizedBox(height: 10),
+        CustomAuthTextButton(
+          txt: "Create Account?",
+          onTap: () {
+            Navigator.pushReplacementNamed(context, AppRoutes.registerView);
+          },
+        ),
       ],
     );
   }
