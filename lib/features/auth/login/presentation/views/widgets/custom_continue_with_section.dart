@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:food_delivery_app/core/utils/app_assets.dart';
 import 'package:food_delivery_app/core/utils/app_text_styles.dart';
+import 'package:food_delivery_app/core/utils/my_strings.dart';
 import 'package:food_delivery_app/features/auth/login/presentation/views/widgets/custom_continue_with_button.dart';
 
 class CustomContinueWithSection extends StatelessWidget {
@@ -13,7 +14,7 @@ class CustomContinueWithSection extends StatelessWidget {
     return Column(
       children: [
         const Text(
-          "Or Continue With",
+          MyStrings.continueWith,
           style: AppTextStyles.text16Bold,
         ),
         const SizedBox(height: 25),
@@ -21,12 +22,12 @@ class CustomContinueWithSection extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             CustomContinueWithButton(
-              text: "Facebook",
+              text: MyStrings.facebook,
               onPressed: () {},
               icon: Assets.iconsFacebookIcon,
             ),
             CustomContinueWithButton(
-              text: "Google",
+              text: MyStrings.google,
               onPressed: () {},
               icon: Assets.iconsGoogleIcon,
             ),

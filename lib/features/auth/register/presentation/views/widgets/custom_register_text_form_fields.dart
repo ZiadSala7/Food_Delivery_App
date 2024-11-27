@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:food_delivery_app/core/common/widgets/custom_password_text_field.dart';
 import 'package:food_delivery_app/core/common/widgets/custom_text_form_field.dart';
 import 'package:food_delivery_app/core/utils/app_assets.dart';
+import 'package:food_delivery_app/core/utils/my_strings.dart';
 
 class CustomRegisterTextFormFields extends StatelessWidget {
   const CustomRegisterTextFormFields({
@@ -13,7 +14,7 @@ class CustomRegisterTextFormFields extends StatelessWidget {
     return Column(
       children: [
         CustomTextFormField(
-          title: "Name",
+          title: MyStrings.name,
           prefixIcon: Image.asset(
             Assets.iconsProfileIcon,
           ),
@@ -21,7 +22,7 @@ class CustomRegisterTextFormFields extends StatelessWidget {
         ),
         const SizedBox(height: 15),
         CustomTextFormField(
-          title: "Email",
+          title: MyStrings.email,
           prefixIcon: Image.asset(
             Assets.iconsEmailIcontf,
           ),
@@ -29,7 +30,7 @@ class CustomRegisterTextFormFields extends StatelessWidget {
         ),
         const SizedBox(height: 15),
         CustomPasswordTextFormField(
-          title: "Password",
+          title: MyStrings.password,
           prefixIcon: Image.asset(
             Assets.iconsPassIcon,
           ),
