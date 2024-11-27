@@ -31,7 +31,7 @@ class LoginViewBody extends StatelessWidget {
         CustomAuthTextButton(
           txt: "Forget Your Password?",
           onTap: () {
-            Navigator.pushReplacementNamed(context, AppRoutes.forgetPassView);
+            Navigator.pushNamed(context, AppRoutes.forgetPassView);
           },
         ),
         const SizedBox(height: 40),

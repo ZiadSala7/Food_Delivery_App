@@ -5,4 +5,5 @@ class AppRoutes {
   static const String loginView = "loginView";
   static const String registerView = "registerView";
   static const String forgetPassView = "forgetPassView";
+  static const String resetPassView = "resetPassView";
 }

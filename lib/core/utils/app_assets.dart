@@ -50,6 +50,10 @@ class Assets {
   /// assets/icons/googleIcon.png
   static const String iconsGoogleIcon = "assets/icons/googleIcon.png";
 
+  /// Assets for iconsIconBack
+  /// assets/icons/IconBack.png
+  static const String iconsIconBack = "assets/icons/IconBack.png";
+
   /// Assets for iconsPassIcon
   /// assets/icons/passIcon.png
   static const String iconsPassIcon = "assets/icons/passIcon.png";
@@ -73,6 +77,10 @@ class Assets {
   /// Assets for iconsVisaIcon
   /// assets/icons/visaIcon.png
   static const String iconsVisaIcon = "assets/icons/visaIcon.png";
+
+  /// Assets for iconsVisibilityIcon
+  /// assets/icons/visibilityIcon.png
+  static const String iconsVisibilityIcon = "assets/icons/visibilityIcon.png";
 
   /// Assets for imagesAdvertising
   /// assets/images/advertising.png
