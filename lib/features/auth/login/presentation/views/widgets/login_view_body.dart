@@ -15,36 +15,38 @@ class LoginViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        const SizedBox(height: 40),
-        Image.asset(Assets.imagesLogo),
-        const SizedBox(height: 55),
-        const Text(
-          MyStrings.logToAccount,
-          style: AppTextStyles.text25Bold,
-        ),
-        const SizedBox(height: 50),
-        const CustomLoginTextFormFields(),
-        const SizedBox(height: 25),
-        const CustomContinueWithSection(),
-        const SizedBox(height: 30),
-        CustomAuthTextButton(
-          txt: MyStrings.forgYourPass,
-          onTap: () {
-            Navigator.pushNamed(context, AppRoutes.forgetPassView);
-          },
-        ),
-        const SizedBox(height: 40),
-        CustomButton(onPressed: () {}, txt: MyStrings.login),
-        const SizedBox(height: 10),
-        CustomAuthTextButton(
-          txt: MyStrings.createAccountQues,
-          onTap: () {
-            Navigator.pushReplacementNamed(context, AppRoutes.registerView);
-          },
-        ),
-      ],
+    return SingleChildScrollView(
+      child: Column(
+        children: [
+          const SizedBox(height: 40),
+          Image.asset(Assets.imagesLogo),
+          const SizedBox(height: 55),
+          const Text(
+            MyStrings.logToAccount,
+            style: AppTextStyles.text25Bold,
+          ),
+          const SizedBox(height: 50),
+          const CustomLoginTextFormFields(),
+          const SizedBox(height: 25),
+          const CustomContinueWithSection(),
+          const SizedBox(height: 30),
+          CustomAuthTextButton(
+            txt: MyStrings.forgYourPass,
+            onTap: () {
+              Navigator.pushNamed(context, AppRoutes.forgetPassView);
+            },
+          ),
+          const SizedBox(height: 40),
+          CustomButton(onPressed: () {}, txt: MyStrings.login),
+          const SizedBox(height: 10),
+          CustomAuthTextButton(
+            txt: MyStrings.createAccountQues,
+            onTap: () {
+              Navigator.pushReplacementNamed(context, AppRoutes.registerView);
+            },
+          ),
+        ],
+      ),
     );
   }
 }

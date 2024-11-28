@@ -27,4 +27,10 @@ class MyStrings {
       "Now you can reset your password to another one, Don't forget it.";
   static const String newPassword = "New Password";
   static const String confirmPassword = "Confirm Password";
+  static const String fillIn = "Fill in your bio to get started";
+  static const String commonDesc =
+      "This data will be displayed in your account profile for security";
+  static const String paymentMethod = "Payment Method";
+  static const String uploadPhoto = "Upload Your Photo Profile";
+  static const String location = "Set Your Location ";
 }

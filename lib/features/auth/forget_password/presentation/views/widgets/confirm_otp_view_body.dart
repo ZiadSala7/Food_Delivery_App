@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:food_delivery_app/constants.dart';
 import 'package:food_delivery_app/core/common/widgets/custom_button.dart';
+import 'package:food_delivery_app/core/common/widgets/custom_common_texts_widget.dart';
 import 'package:food_delivery_app/core/utils/app_routes.dart';
-import 'package:food_delivery_app/core/utils/app_text_styles.dart';
 import 'package:food_delivery_app/core/utils/my_strings.dart';
-import 'package:food_delivery_app/features/auth/forget_password/presentation/views/widgets/custom_arrow_back_button.dart';
 import 'package:pinput/pinput.dart';
 
 class ConfirmOtpViewBody extends StatelessWidget {
@@ -12,42 +11,33 @@ class ConfirmOtpViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        const SizedBox(height: 50),
-        CustomArrowBackButton(onPressed: Navigator.of(context).pop),
-        const SizedBox(height: 20),
-        const Text(
-          MyStrings.codeDigits,
-          style: AppTextStyles.text30Bold,
-          textAlign: TextAlign.left,
-        ),
-        const SizedBox(height: 20),
-        const Text(
-          MyStrings.codeDesc,
-          style: AppTextStyles.text16Reg,
-        ),
-        const SizedBox(height: 70),
-        Container(
-          decoration: const BoxDecoration(
-            color: Color.fromARGB(182, 245, 245, 245),
+    return SingleChildScrollView(
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          const CustomCommonTextsWidget(
+            headerTxt: MyStrings.codeDigits,
+            descriptionTxt: MyStrings.codeDesc,
           ),
-          width: double.infinity,
-          child: Pinput(
-            onCompleted: (value) {},
-            defaultPinTheme: defaultPinTheme,
-            focusedPinTheme: focusedPinTheme,
+          const SizedBox(height: 70),
+          Container(
+            color: const Color.fromARGB(182, 245, 245, 245),
+            width: double.infinity,
+            child: Pinput(
+              onCompleted: (value) {},
+              defaultPinTheme: defaultPinTheme,
+              focusedPinTheme: focusedPinTheme,
+            ),
           ),
-        ),
-        const SizedBox(height: 270),
-        CustomButton(
-          onPressed: () {
-            Navigator.pushNamed(context, AppRoutes.resetPassView);
-          },
-          txt: MyStrings.next,
-        ),
-      ],
+          const SizedBox(height: 270),
+          CustomButton(
+            onPressed: () {
+              Navigator.pushNamed(context, AppRoutes.resetPassView);
+            },
+            txt: MyStrings.next,
+          ),
+        ],
+      ),
     );
   }
 }

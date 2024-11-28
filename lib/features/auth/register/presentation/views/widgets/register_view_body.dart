@@ -12,27 +12,29 @@ class RegisterViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        const SizedBox(height: 40),
-        Image.asset(Assets.imagesLogo),
-        const SizedBox(height: 55),
-        const Text(
-          MyStrings.signUp,
-          style: AppTextStyles.text25Bold,
-        ),
-        const SizedBox(height: 50),
-        const CustomRegisterTextFormFields(),
-        const SizedBox(height: 100),
-        CustomButton(onPressed: () {}, txt: MyStrings.createAccount),
-        const SizedBox(height: 30),
-        CustomAuthTextButton(
-          txt: MyStrings.alreadyHaveAcc,
-          onTap: () {
-            Navigator.pushReplacementNamed(context, AppRoutes.loginView);
-          },
-        ),
-      ],
+    return SingleChildScrollView(
+      child: Column(
+        children: [
+          const SizedBox(height: 40),
+          Image.asset(Assets.imagesLogo),
+          const SizedBox(height: 55),
+          const Text(
+            MyStrings.signUp,
+            style: AppTextStyles.text25Bold,
+          ),
+          const SizedBox(height: 50),
+          const CustomRegisterTextFormFields(),
+          const SizedBox(height: 100),
+          CustomButton(onPressed: () {}, txt: MyStrings.createAccount),
+          const SizedBox(height: 30),
+          CustomAuthTextButton(
+            txt: MyStrings.alreadyHaveAcc,
+            onTap: () {
+              Navigator.pushReplacementNamed(context, AppRoutes.loginView);
+            },
+          ),
+        ],
+      ),
     );
   }
 }
