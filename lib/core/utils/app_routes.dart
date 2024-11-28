@@ -7,4 +7,7 @@ class AppRoutes {
   static const String forgetPassView = "forgetPassView";
   static const String confirmOtpView = "confirmOtpView";
   static const String resetPassView = "resetPassView";
+  static const String completeNameView = "completeNameView";
+  static const String completeIamgeView = "completeIamgeView";
+  static const String completeLocationView = "completeLocationView";
 }

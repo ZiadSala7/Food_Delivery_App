@@ -37,7 +37,12 @@ class LoginViewBody extends StatelessWidget {
             },
           ),
           const SizedBox(height: 40),
-          CustomButton(onPressed: () {}, txt: MyStrings.login),
+          CustomButton(
+              onPressed: () {
+                Navigator.pushReplacementNamed(
+                    context, AppRoutes.completeNameView);
+              },
+              txt: MyStrings.login),
           const SizedBox(height: 10),
           CustomAuthTextButton(
             txt: MyStrings.createAccountQues,
