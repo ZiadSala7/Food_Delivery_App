@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:food_delivery_app/core/common/views/congratulation_view.dart';
 import 'package:food_delivery_app/core/common/widgets/custom_button.dart';
-import 'package:food_delivery_app/core/common/widgets/custom_password_text_field.dart';
 import 'package:food_delivery_app/core/utils/app_assets.dart';
 import 'package:food_delivery_app/core/utils/app_routes.dart';
 import 'package:food_delivery_app/core/utils/app_text_styles.dart';
 import 'package:food_delivery_app/core/utils/my_strings.dart';
 import 'package:food_delivery_app/features/auth/forget_password/presentation/views/widgets/custom_arrow_back_button.dart';
+import 'package:food_delivery_app/features/auth/forget_password/presentation/views/widgets/custom_reset_password_text_fields.dart';
 
 class ResetPasswordViewBody extends StatelessWidget {
   const ResetPasswordViewBody({super.key});
@@ -31,15 +31,7 @@ class ResetPasswordViewBody extends StatelessWidget {
             style: AppTextStyles.text16Reg,
           ),
           const SizedBox(height: 40),
-          CustomPasswordTextFormField(
-            title: MyStrings.newPassword,
-            controller: TextEditingController(),
-          ),
-          const SizedBox(height: 20),
-          CustomPasswordTextFormField(
-            title: MyStrings.confirmPassword,
-            controller: TextEditingController(),
-          ),
+          const CustotmResetPasswordTextFields(),
           const SizedBox(height: 270),
           Center(
             child: CustomButton(
