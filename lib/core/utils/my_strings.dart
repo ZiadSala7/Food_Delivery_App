@@ -22,4 +22,9 @@ class MyStrings {
       "Code send to +6282045**** . This code will expired in 01:30";
   static const String backTxt = "Back";
   static const String tryOrder = "Try Order";
+  static const String resetPassHere = "Reset your password\nhere";
+  static const String resetPassDesc =
+      "Now you can reset your password to another one, Don't forget it.";
+  static const String newPassword = "New Password";
+  static const String confirmPassword = "Confirm Password";
 }
