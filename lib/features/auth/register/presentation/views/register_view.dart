@@ -9,7 +9,7 @@ class RegisterView extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Scaffold(
       backgroundColor: Color(0xfff5f6fe),
-      body: CustomCommonAuthBackground(widget: RegisterViewBody()),
+      body: CustomCommonBackground(widget: RegisterViewBody()),
     );
   }
 }

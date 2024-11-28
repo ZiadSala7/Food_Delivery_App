@@ -105,5 +105,13 @@ class Assets {
   /// Assets for imagesOnbord2
   /// assets/images/onbord2.png
   static const String imagesOnbord2 = "assets/images/onbord2.png";
+
+  /// Assets for imagesPassCong
+  /// assets/images/passCong.png
+  static const String imagesPassCong = "assets/images/passCong.png";
+
+  /// Assets for imagesProfileCong
+  /// assets/images/profileCong.png
+  static const String imagesProfileCong = "assets/images/profileCong.png";
 }
 

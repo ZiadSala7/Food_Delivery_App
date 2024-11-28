@@ -17,4 +17,9 @@ class MyStrings {
   static const String signUp = "Sign Up For Free";
   static const String alreadyHaveAcc = "Already Have an Account?";
   static const String createAccount = "Create Account";
+  static const String codeDigits = "Enter 4-digit\nVerification code";
+  static const String codeDesc =
+      "Code send to +6282045**** . This code will expired in 01:30";
+  static const String backTxt = "Back";
+  static const String tryOrder = "Try Order";
 }

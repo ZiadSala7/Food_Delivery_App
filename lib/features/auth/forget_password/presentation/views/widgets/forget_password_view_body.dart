@@ -37,7 +37,7 @@ class ForgetPasswordViewBody extends StatelessWidget {
         const SizedBox(height: 300),
         CustomButton(
           onPressed: () {
-            Navigator.pushNamed(context, AppRoutes.resetPassView);
+            Navigator.pushNamed(context, AppRoutes.confirmOtpView);
           },
           txt: MyStrings.next,
         ),
