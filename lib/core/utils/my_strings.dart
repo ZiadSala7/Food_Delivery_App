@@ -33,4 +33,7 @@ class MyStrings {
   static const String paymentMethod = "Payment Method";
   static const String uploadPhoto = "Upload Your Photo Profile";
   static const String location = "Set Your Location ";
+  static const String firstName = "First Name";
+  static const String lastName = "Last Name";
+  static const String mobileNum = "Mobile Number";
 }

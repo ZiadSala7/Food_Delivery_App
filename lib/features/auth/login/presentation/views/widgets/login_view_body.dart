@@ -39,8 +39,7 @@ class LoginViewBody extends StatelessWidget {
           const SizedBox(height: 40),
           CustomButton(
               onPressed: () {
-                Navigator.pushReplacementNamed(
-                    context, AppRoutes.completeNameView);
+                Navigator.pushNamed(context, AppRoutes.completeNameView);
               },
               txt: MyStrings.login),
           const SizedBox(height: 10),
