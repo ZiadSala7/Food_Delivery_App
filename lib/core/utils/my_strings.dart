@@ -36,4 +36,6 @@ class MyStrings {
   static const String firstName = "First Name";
   static const String lastName = "Last Name";
   static const String mobileNum = "Mobile Number";
+  static const String yourLocation = "Your Location";
+  static const String setLocation = "Set Location";
 }

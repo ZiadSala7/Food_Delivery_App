@@ -54,6 +54,10 @@ class Assets {
   /// assets/icons/IconBack.png
   static const String iconsIconBack = "assets/icons/IconBack.png";
 
+  /// Assets for iconsLocation
+  /// assets/icons/location.png
+  static const String iconsLocation = "assets/icons/location.png";
+
   /// Assets for iconsPassIcon
   /// assets/icons/passIcon.png
   static const String iconsPassIcon = "assets/icons/passIcon.png";
