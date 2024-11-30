@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:food_delivery_app/core/common/functions/box_decoration_method.dart';
+import 'package:food_delivery_app/core/utils/functions/box_decoration_method.dart';
 import 'package:food_delivery_app/core/utils/app_assets.dart';
 
 class SplashViewBody extends StatelessWidget {

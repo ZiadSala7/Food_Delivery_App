@@ -1,6 +1,6 @@
 import 'package:animate_do/animate_do.dart';
 import 'package:flutter/material.dart';
-import 'package:food_delivery_app/core/common/functions/box_decoration_method.dart';
+import 'package:food_delivery_app/core/utils/functions/box_decoration_method.dart';
 
 class CustomCommonBackground extends StatelessWidget {
   final Widget widget;
