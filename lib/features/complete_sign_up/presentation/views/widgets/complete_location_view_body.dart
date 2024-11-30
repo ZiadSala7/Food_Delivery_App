@@ -28,7 +28,10 @@ class CompleteLocationViewBody extends StatelessWidget {
                   builder: (context) => CongratulationView(
                     image: Assets.imagesProfileCong,
                     buttonTxt: MyStrings.tryOrder,
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.pushReplacementNamed(
+                          context, AppRoutes.homeView);
+                    },
                   ),
                 ),
               );
