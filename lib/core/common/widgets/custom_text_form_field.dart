@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:food_delivery_app/constants.dart';
 import 'package:food_delivery_app/core/utils/app_colors.dart';
 import 'package:food_delivery_app/core/utils/app_text_styles.dart';
 
@@ -24,7 +25,7 @@ class CustomTextFormField extends StatelessWidget {
         suffixIcon: suffixIcon == const SizedBox() ? null : suffixIcon,
         hintText: title,
         filled: true,
-        fillColor: Colors.white,
+        fillColor: scaffoldColorAuth,
         hintStyle: AppTextStyles.text16Reg.copyWith(color: AppColors.grey),
         focusedBorder: OutlineInputBorder(
           borderSide: const BorderSide(

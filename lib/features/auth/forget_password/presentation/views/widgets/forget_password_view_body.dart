@@ -13,7 +13,7 @@ class ForgetPasswordViewBody extends StatelessWidget {
   Widget build(BuildContext context) {
     return SingleChildScrollView(
       child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
+        crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           const CustomCommonTextsWidget(
             headerTxt: MyStrings.forgPass,
@@ -25,7 +25,7 @@ class ForgetPasswordViewBody extends StatelessWidget {
             controller: TextEditingController(),
             prefixIcon: Image.asset(Assets.iconsEmailIcontf),
           ),
-          const SizedBox(height: 300),
+          const SizedBox(height: 340),
           CustomButton(
             onPressed: () {
               Navigator.pushNamed(context, AppRoutes.confirmOtpView);

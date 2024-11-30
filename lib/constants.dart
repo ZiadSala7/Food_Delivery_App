@@ -3,7 +3,7 @@ import 'package:food_delivery_app/core/utils/app_text_styles.dart';
 import 'package:pinput/pinput.dart';
 
 const String parkinFamily = "Parkinsans";
-const Color scaffoldColorAuth = Color(0xfff5f6fe);
+const Color scaffoldColorAuth = Color.fromARGB(57, 203, 207, 242);
 const Color scaffoldColorMain = Color(0xfffcfefc);
 
 final defaultPinTheme = PinTheme(

@@ -14,7 +14,7 @@ class ResetPasswordViewBody extends StatelessWidget {
   Widget build(BuildContext context) {
     return SingleChildScrollView(
       child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
+        crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           const CustomCommonTextsWidget(
             headerTxt: MyStrings.resetPassHere,
@@ -22,26 +22,24 @@ class ResetPasswordViewBody extends StatelessWidget {
           ),
           const SizedBox(height: 40),
           const CustotmResetPasswordTextFields(),
-          const SizedBox(height: 270),
-          Center(
-            child: CustomButton(
-              onPressed: () {
-                Navigator.pushReplacement(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => CongratulationView(
-                      image: Assets.imagesPassCong,
-                      buttonTxt: MyStrings.backTxt,
-                      onPressed: () {
-                        Navigator.pushReplacementNamed(
-                            context, AppRoutes.loginView);
-                      },
-                    ),
+          const SizedBox(height: 285),
+          CustomButton(
+            onPressed: () {
+              Navigator.pushReplacement(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => CongratulationView(
+                    image: Assets.imagesPassCong,
+                    buttonTxt: MyStrings.backTxt,
+                    onPressed: () {
+                      Navigator.pushReplacementNamed(
+                          context, AppRoutes.loginView);
+                    },
                   ),
-                );
-              },
-              txt: MyStrings.next,
-            ),
+                ),
+              );
+            },
+            txt: MyStrings.next,
           ),
         ],
       ),

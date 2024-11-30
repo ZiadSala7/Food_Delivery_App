@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:food_delivery_app/constants.dart';
 import 'package:food_delivery_app/core/utils/app_colors.dart';
 import 'package:food_delivery_app/core/utils/app_text_styles.dart';
 
@@ -42,7 +43,7 @@ class _CustomPasswordTextFormFieldState
         hintText: widget.title,
         hintStyle: AppTextStyles.text16Reg.copyWith(color: AppColors.grey),
         filled: true,
-        fillColor: Colors.white,
+        fillColor: scaffoldColorAuth,
         focusedBorder: OutlineInputBorder(
           borderSide: const BorderSide(
             color: AppColors.common,

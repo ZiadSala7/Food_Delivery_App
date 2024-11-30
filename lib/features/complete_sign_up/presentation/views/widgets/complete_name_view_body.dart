@@ -20,10 +20,11 @@ class CompleteNameViewBody extends StatelessWidget {
           const CustomCompleteNameViewTextFields(),
           const SizedBox(height: 200),
           CustomButton(
-              onPressed: () {
-                Navigator.pushNamed(context, AppRoutes.completePaymentView);
-              },
-              txt: MyStrings.next),
+            onPressed: () {
+              Navigator.pushNamed(context, AppRoutes.completePaymentView);
+            },
+            txt: MyStrings.next,
+          ),
         ],
       ),
     );

@@ -13,7 +13,7 @@ class ConfirmOtpViewBody extends StatelessWidget {
   Widget build(BuildContext context) {
     return SingleChildScrollView(
       child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
+        crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           const CustomCommonTextsWidget(
             headerTxt: MyStrings.codeDigits,
@@ -29,7 +29,7 @@ class ConfirmOtpViewBody extends StatelessWidget {
               focusedPinTheme: focusedPinTheme,
             ),
           ),
-          const SizedBox(height: 270),
+          const SizedBox(height: 305),
           CustomButton(
             onPressed: () {
               Navigator.pushNamed(context, AppRoutes.resetPassView);

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:food_delivery_app/core/common/widgets/custom_button.dart';
 import 'package:food_delivery_app/core/utils/app_assets.dart';
-import 'package:food_delivery_app/core/common/widgets/custom_common_auth_background.dart';
+import 'package:food_delivery_app/core/common/widgets/custom_common_background.dart';
 
 class CongratulationView extends StatelessWidget {
   final String image;
