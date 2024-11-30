@@ -4,7 +4,7 @@ import 'package:food_delivery_app/core/common/widgets/custom_common_texts_widget
 import 'package:food_delivery_app/core/utils/app_assets.dart';
 import 'package:food_delivery_app/core/utils/app_routes.dart';
 import 'package:food_delivery_app/core/utils/my_strings.dart';
-import 'package:food_delivery_app/features/complete_sign_up/presentation/views/widgets/custom_payment_method_button.dart';
+import 'package:food_delivery_app/features/complete_sign_up/presentation/views/widgets/custom_complete_method_button.dart';
 
 class CompletePaymentViewBody extends StatelessWidget {
   const CompletePaymentViewBody({super.key});
@@ -19,17 +19,17 @@ class CompletePaymentViewBody extends StatelessWidget {
           descriptionTxt: MyStrings.commonDesc,
         ),
         const SizedBox(height: 20),
-        CustomPaymentMethodButton(
+        CustomCompleteMethodButton(
           image: Assets.iconsPaypalIcon,
           onTap: () {},
         ),
         const SizedBox(height: 20),
-        CustomPaymentMethodButton(
+        CustomCompleteMethodButton(
           image: Assets.iconsVisaIcon,
           onTap: () {},
         ),
         const SizedBox(height: 20),
-        CustomPaymentMethodButton(
+        CustomCompleteMethodButton(
           image: Assets.iconsPayoneerIcon,
           onTap: () {},
         ),

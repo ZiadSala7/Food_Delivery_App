@@ -1,12 +1,14 @@
 import 'package:flutter/material.dart';
 
-class CustomPaymentMethodButton extends StatelessWidget {
+class CustomCompleteMethodButton extends StatelessWidget {
   final String image;
+  final double height;
   final Function() onTap;
-  const CustomPaymentMethodButton({
+  const CustomCompleteMethodButton({
     super.key,
     required this.image,
     required this.onTap,
+    this.height = 50,
   });
 
   @override
@@ -20,7 +22,7 @@ class CustomPaymentMethodButton extends StatelessWidget {
           child: Center(
             child: Image.asset(
               image,
-              height: 50,
+              height: height,
             ),
           ),
         ),
