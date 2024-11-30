@@ -30,13 +30,14 @@ class CompleteImageViewBody extends StatelessWidget {
           onTap: () {},
           height: 115,
         ),
-        const SizedBox(height: 117),
+        const Spacer(),
         CustomButton(
           onPressed: () {
             Navigator.pushNamed(context, AppRoutes.completeLocationView);
           },
           txt: MyStrings.next,
         ),
+        const SizedBox(height: 60),
       ],
     );
   }

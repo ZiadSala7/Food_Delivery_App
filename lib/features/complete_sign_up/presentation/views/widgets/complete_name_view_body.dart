@@ -18,7 +18,7 @@ class CompleteNameViewBody extends StatelessWidget {
             descriptionTxt: MyStrings.commonDesc,
           ),
           const CustomCompleteNameViewTextFields(),
-          const SizedBox(height: 200),
+          const SizedBox(height: 210),
           CustomButton(
             onPressed: () {
               Navigator.pushNamed(context, AppRoutes.completePaymentView);

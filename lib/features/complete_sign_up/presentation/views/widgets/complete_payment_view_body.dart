@@ -33,13 +33,14 @@ class CompletePaymentViewBody extends StatelessWidget {
           image: Assets.iconsPayoneerIcon,
           onTap: () {},
         ),
-        const SizedBox(height: 147),
+        const Spacer(),
         CustomButton(
           onPressed: () {
             Navigator.pushNamed(context, AppRoutes.completeIamgeView);
           },
           txt: MyStrings.next,
         ),
+        const SizedBox(height: 60),
       ],
     );
   }
