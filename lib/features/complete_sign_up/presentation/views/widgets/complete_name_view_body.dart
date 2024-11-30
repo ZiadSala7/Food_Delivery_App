@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:food_delivery_app/core/common/widgets/custom_button.dart';
 import 'package:food_delivery_app/core/common/widgets/custom_common_texts_widget.dart';
+import 'package:food_delivery_app/core/utils/app_routes.dart';
 import 'package:food_delivery_app/core/utils/my_strings.dart';
 import 'package:food_delivery_app/features/complete_sign_up/presentation/views/widgets/custom_complete_name_view_text_fields.dart';
 
@@ -18,7 +19,11 @@ class CompleteNameViewBody extends StatelessWidget {
           ),
           const CustomCompleteNameViewTextFields(),
           const SizedBox(height: 200),
-          CustomButton(onPressed: () {}, txt: MyStrings.next),
+          CustomButton(
+              onPressed: () {
+                Navigator.pushNamed(context, AppRoutes.completePaymentView);
+              },
+              txt: MyStrings.next),
         ],
       ),
     );

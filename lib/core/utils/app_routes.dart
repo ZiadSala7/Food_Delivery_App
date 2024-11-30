@@ -10,4 +10,5 @@ class AppRoutes {
   static const String completeNameView = "completeNameView";
   static const String completeIamgeView = "completeIamgeView";
   static const String completeLocationView = "completeLocationView";
+  static const String completePaymentView = "completePaymentView";
 }

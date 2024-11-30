@@ -8,6 +8,7 @@ import 'package:food_delivery_app/features/auth/register/presentation/views/regi
 import 'package:food_delivery_app/features/complete_sign_up/presentation/views/complete_image_view.dart';
 import 'package:food_delivery_app/features/complete_sign_up/presentation/views/complete_location_view.dart';
 import 'package:food_delivery_app/features/complete_sign_up/presentation/views/complete_name_view.dart';
+import 'package:food_delivery_app/features/complete_sign_up/presentation/views/complete_payment_view.dart';
 import '../../features/onboarding/presentation/views/first_onboarding_view.dart';
 import '../../features/onboarding/presentation/views/second_onboarding_view.dart';
 
@@ -23,5 +24,6 @@ Map<String, WidgetBuilder> get appRoutesMap {
     AppRoutes.completeNameView: (context) => const CompleteNameView(),
     AppRoutes.completeIamgeView: (context) => const CompleteImageView(),
     AppRoutes.completeLocationView: (context) => const CompleteLocationView(),
+    AppRoutes.completePaymentView: (context) => const CompletePaymentView(),
   };
 }
